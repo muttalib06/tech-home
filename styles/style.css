@@ -111,7 +111,7 @@ nav{
 main{
         padding: 0 165px;
         margin:0 auto;
-        max-width:1110px;
+        max-width:1440px;
 }
 
 /* company section related styles */
@@ -171,6 +171,43 @@ main{
         color: #787885;
         font-size: .8rem;
 }
+.white-btn{
+        position: absolute;
+        right: 10%;
+        margin-top: 20px;
+        border: none;
+        color:#E02C6D;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: white;
+}
+
+/* feature related styles */
+.feature{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap:100px;
+}
+.feature-img img{
+        width: 100%;
+}
+.feature-description{
+        color: #6C6C6C;
+        font-size: 1rem;
+        font-weight: 700;
+}
+.feature-title{
+        color:#0A0826;
+        font-weight: 700;
+        font-size: 2.375rem;
+}
+.feature-btn{
+        border-radius: 0px;
+}
+.feature-title,.feature-description{
+        margin-bottom: 16px;
+}
 
 
 
@@ -213,6 +250,14 @@ main{
         .collection-container{
                 grid-template-columns: 1fr;
                
+        }
+        .feature{
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                text-align: center;
+        }
+        .white-btn{
+                position: static;
         }
 }
 
